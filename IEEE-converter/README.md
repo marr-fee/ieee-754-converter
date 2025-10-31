@@ -28,6 +28,8 @@ For binary input, enter 32 or 64 bits (e.g. 01000001101101001100110011001101)
 
 Click Calculate to view results.
 
+test at https://marr-fee.github.io/ieee-754-converter/
+
 🛠️ Tech Stack
 
 HTML / CSS / JavaScript (Vanilla)
