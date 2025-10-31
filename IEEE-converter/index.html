@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IEEE converter</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-bar">
+        <div class="page_title"><h1>Number-Systems</h1></div>
+        <div class="nav-container"></div>
+      </div>
+      <h2 class="title">IEEE-754 floating point numbers converter</h2>
+
+      <div class="toggle-container">
+        <div class="convert-options" id="decToIe">decimal to IEEE-754</div>
+        <div class="convert-options" id="ieToDec">IEEE-754 to decimal</div>
+        <div class="toggle-background"></div>
+      </div>
+
+      <div class="input-feilds">
+        <label for="num-bits" class="num-bit">
+          <select name="num-bits" id="num-bits">
+            <option value="" disabled selected hidden>Select bits..</option>
+            <option value="32">32 bits</option>
+            <option value="64">64 bits</option>
+          </select>
+        </label>
+        <label for="number">
+          <input type="number" id="number" placeholder="Number" />
+          <button id="calculate-btn">Convert</button>
+        </label>
+      </div>
+
+      <div class="solution">
+        <h4>Result</h4>
+        <div class="decimal-answer-div hidden">
+          <div class="dec-answer-cntr">1234.4567773</div>
+        </div>
+        <div class="answer-div hidden">
+          <div class="sign-cntr"></div>
+          <div class="exponent-cntr"></div>
+          <div class="mantissa-cntr"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
