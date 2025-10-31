@@ -142,3 +142,12 @@ decToIeee.addEventListener("click", () => {
   decimalAnswer.classList.add("hidden");
   ieeeAnswer.classList.remove("hidden");
 });
+
+window.addEventListener("DOMContentLoaded", () => {
+  targetCalculation = "d-ieee"; 
+  numberField.type = "number";
+  bitsOptions.classList.remove("hidden");
+  toggleBckgr.classList.remove("active");
+  decimalAnswer.classList.add("hidden");
+  ieeeAnswer.classList.remove("hidden");
+});
